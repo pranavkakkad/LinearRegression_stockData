@@ -1,0 +1,63 @@
+# LinearRegression_stockData
+Following is the output of advertising_LR.py file
+
+
+(10197, 7)
+Index(['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume'], dtype='object')
+       Open      High       Low     Close  Adj Close     Volume
+0  0.128348  0.128906  0.128348  0.128348   0.100751  469033600
+1  0.122210  0.122210  0.121652  0.121652   0.095495  175884800
+2  0.113281  0.113281  0.112723  0.112723   0.088485  105728000
+3  0.115513  0.116071  0.115513  0.115513   0.090676   86441600
+4  0.118862  0.119420  0.118862  0.118862   0.093304   73449600
+Intercept    0.003939
+Open         0.999800
+dtype: float64
+0.003939102943997241
+[0.99980047]
+Intercept    9.199540e-05
+Open        -5.469987e-01
+High         8.240925e-01
+Low          7.222490e-01
+Volume      -4.102787e-13
+dtype: float64
+0.017176756714974317
+[-5.05715777e-01  7.38675934e-01  7.02793257e-01  6.53831243e-02
+  2.48918779e-11]
+[('Open', -0.505715776523953), ('High', 0.7386759336117934), ('Low', 0.7027932572727935), ('Adj Close', 0.06538312434555651), ('Volume', 2.4891877925116027e-11)]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  Close   R-squared:                       1.000
+Model:                            OLS   Adj. R-squared:                  1.000
+Method:                 Least Squares   F-statistic:                 3.457e+07
+Date:                Mon, 24 May 2021   Prob (F-statistic):               0.00
+Time:                        16:08:52   Log-Likelihood:                 2239.7
+No. Observations:               10197   AIC:                            -4469.
+Df Residuals:                   10192   BIC:                            -4433.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     9.2e-05      0.003      0.031      0.976      -0.006       0.006
+Open          -0.5470      0.009    -62.772      0.000      -0.564      -0.530
+High           0.8241      0.008    106.457      0.000       0.809       0.839
+Low            0.7222      0.007    109.569      0.000       0.709       0.735
+Volume     -4.103e-13   5.78e-12     -0.071      0.943   -1.17e-11    1.09e-11
+==============================================================================
+Omnibus:                     4760.228   Durbin-Watson:                   2.392
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          6862501.026
+Skew:                          -0.630   Prob(JB):                         0.00
+Kurtosis:                     130.084   Cond. No.                     2.71e+09
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.71e+09. This might indicate that there are
+strong multicollinearity or other numerical problems.
+0.999926296355677
+0.9999262963921788
+error with 'Volume' in Linear Regression 
+0.19598963307022402
+Error without considering 'Volume' feature in it
+0.19603413481922435

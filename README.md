@@ -2,6 +2,7 @@
 Following is the output of advertising_LR.py file
 
 
+
 (10197, 7)
 Index(['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume'], dtype='object')
        Open      High       Low     Close  Adj Close     Volume
